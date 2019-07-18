@@ -1,0 +1,386 @@
+@import "../common/var.less";
+.msf-login{
+    .msf-login-head {
+        width: 100%;
+        height: 360px;
+        background-color: #00b38a;
+        .logo {
+            position: absolute;
+            z-index: 9999;
+            top: 76px;
+            left: 50%;
+            margin-left: -350px;
+            font-size: 32px;
+            color: #fff;
+        }
+    }
+    .msf-login-content-box {
+        width: 552px;
+        margin: -205px auto 60px;
+        padding: 62px 70px 68px 78px;
+        background-color: #fff;
+        display: table;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        border: 1px solid #dce1e6;
+    }
+    .search_button{
+        cursor: pointer;
+    }
+    .search_button:hover {
+        background: #00a57f!important;
+    }
+    .registerBtn .el-button{
+        width: 370px;
+    }
+    .el-input input{
+        height: 35px;
+    }
+    .registerBtn{
+        width: 100%;
+    }
+}
+.input {
+    height: 44px;
+    line-height: 44px\9;
+    vertical-align: middle;
+    color: #333;
+    border-width: 1px;
+    border-style: solid;
+    outline: 0;
+}
+.msf-login-content-box .tab_active {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    z-index: 1;
+    background-color: #00b38a;
+    width: 150px;
+    height: 1px
+}
+.msf-login-content-box .tab_active:before,
+.msf-login-content-box .tab_active:after {
+    position: absolute;
+    z-index: 2;
+    top: -12px;
+    left: 50%;
+    margin-left: -3px;
+    content: "";
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #007b5f
+}
+.msf-login-content-box .tab_active:after {
+    z-index: 3;
+    top: -11px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #fff
+}
+
+.msf-login-content-box .input_group>input.first_child {
+    padding-right: 80px
+}
+
+.msf-login-content-box .input_group>input.last_child {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    height: 43px;
+    font-size: 14px;
+    padding: 0;
+    border: 0
+}
+
+.btn:hover,
+.btn.btn_active {
+    text-decoration: none;
+    color: #00b38a;
+    background-color: #fff
+}
+
+.msf-login-content-box .input_group>input.last_child.btn_disabled {
+    background-color: #fff;
+    color: #777;
+    border: 0
+}
+
+.msf-login-content-box .verify_tips {
+    margin-top: 12px;
+    color: #777
+}
+
+.msf-login-content-box .verify_tips .auto_phone {
+    outline: 0;
+    text-decoration: none;
+    color: #00b389;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    font-size: 14px
+}
+
+.msf-login-content-box .verify_tips .verify_tips_main,
+.msf-login-content-box .verify_tips .verify_tips_count_down {
+    display: none
+}
+
+.msf-login-content-box .left_area {
+    width: 290px
+}
+
+.msf-login-content-box .left_area .form-content {
+    display: none
+}
+
+.msf-login-content-box .left_area .qr-tip {
+    margin-top: 20px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #666;
+    text-align: center
+}
+
+
+.msf-login-content-box .form_body:last-child {
+    /*display:none*/
+}
+
+.msf-login-content-box .input_item {
+    z-index: 1;
+    width: 100%;
+    position: relative;
+}
+
+.msf-login-content-box .input_item+.input_item {
+    margin-top: 20px
+}
+
+.msf-login-content-box .input_item.btn_group {
+    margin-top: 24px
+}
+
+.msf-login-content-box .input_white {
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-color: #ededed;
+    background: 0 0
+}
+
+.msf-login-content-box .input {
+    box-sizing: border-box;
+    width: 290px;
+    border-radius: 0;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.msf-login-content-box .forgot_pwd {
+    position: relative;
+    float: right;
+    font-size: 14px;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #00b38a;
+    margin-top: -5px;
+    z-index: 3
+}
+
+.msf-login-content-box .reg_now {
+    text-align: center;
+    margin-top: 0;
+    color: #777
+}
+
+.msf-login-content-box .reg_now a {
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: underline;
+    color: #00b38a;
+    padding-right: 23px;
+    background: url(//www.lgstatic.com/passport/static/pc/modules/common/img/icon-arrow-right_ea91505.png) right center no-repeat
+}
+
+.msf-login-content-box .divider {
+    position: relative;
+    border-left: 1px dashed #ededed;
+    height: 274px;
+    color: #d8d8d8;
+    margin: 0 52px
+}
+
+.msf-login-content-box .divider:after {
+    position: absolute;
+    content: "or";
+    left: 50%;
+    top: 50%;
+    padding: 2px;
+    background-color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.msf-login-content-box .divider.code_divider {
+    height: 305px
+}
+
+.msf-login-content-box [data-propertyname=request_form_verifyCode] input[type=text] {
+    padding-right: 130px
+}
+
+.msf-login-content-box .yzm {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    z-index: 1;
+    width: 98px;
+    line-height: 38px;
+    color: #777
+}
+
+.msf-login-content-box .reflash {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    z-index: 2;
+    height: 40px;
+    width: 98px
+}
+
+.msf-login-content-box .right_area {
+    width: 150px;
+    padding-top: 26px;
+    color: #777;
+    display: none
+}
+
+.msf-login-content-box .right_area h5 {
+    margin: 44px 0 8px;
+    color: #555
+}
+
+.msf-login-content-box .right_area .register_now {
+    cursor: pointer;
+    display: inline-block;
+    height: 22px;
+    font-size: 16px;
+    color: #00b38a;
+    padding-right: 23px;
+    background: url(//www.lgstatic.com/passport/static/pc/modules/common/img/icon-arrow-right_ea91505.png) right center no-repeat
+}
+
+[data-controltype=VerifyCode] input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+@media only screen and (-o-min-device-pixel-ratio:2/1),
+only screen and (-moz-min-device-pixel-ratio:2),
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min-resolution:240dpi),
+only screen and (min-resolution:2dppx) {
+    .msf-login-content-box .reg_now a {
+        background-image: url(//www.lgstatic.com/passport/static/pc/modules/common/img/icon-arrow-right@2x_13582c6.png);
+        background-size: 18px 17px
+    }
+}
+
+.form_head {
+    position: relative;
+    z-index: 1;
+    height: 33px;
+    margin-bottom: 29px;
+    border-bottom: 1px solid #ebebeb
+}
+
+.form_head li {
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 33px;
+    cursor: pointer;
+    text-align: center;
+    color: #333
+}
+
+.form_head li.active {
+    color: #00b38a
+}
+
+.msf-login .msf-login-content-box .btn-login {
+    width: 100%;
+    font-size: 18px;
+    line-height: 46px;
+    height: 46px;
+    color: #fff;
+    border-color: #00b38a;
+    background-color: #00b38a;
+    font-size: 16px;
+    line-height: 44px;
+    display: inline-block;
+    height: 44px;
+    padding: 0 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    outline: 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: .05s linear;
+    -o-transition: .05s linear;
+    transition: .05s linear;
+    color: #fff;
+    border-color: #00b38a;
+    background-color: #00b38a;
+    font-size: 18px;
+    line-height: 46px;
+    height: 46px;
+}
+.area_code_con{
+    position: relative;
+    .area_code{
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+    .area_code_input{
+        font-size: 16px;
+        padding-left: 50px;
+    }
+}
+.sense_msg_code{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+@keyframes infoMove {
+    0% {
+        left: 200px;
+        opacity: 0
+    }
+
+    80% {
+        left: 40px;
+        opacity: 1
+    }
+
+    100% {
+        left: 48px;
+        opacity: 1
+    }
+}

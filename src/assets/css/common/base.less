@@ -1,0 +1,103 @@
+@charset "utf-8";
+@import "../common/var.less";
+/* 
+*	base 
+*	用来定义基础的类名以及基础的公用样式
+*	by zhangning
+*/
+.msf-line{
+	width: 100%;
+  border-top: 1px solid @color-base;
+}
+.msf-dashed-line{
+	width: 100%;
+  	border-top: 1px dashed @color-lightgray;
+}
+.msf-floatleft{float:left;overflow:hidden;}
+.msf-floatright{float:right;overflow:hidden;}
+.clearfix{overflow: hidden;clear: both;}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.msf-select-line .el-select{
+	width: 100%;
+}
+.msf-color-red{
+	color: @color-red!important;
+}
+/*重写button的选中样式*/
+.el-button{
+	padding: 10px 20px;
+}
+.el-button--custom{ /*定制样式step4里用到*/
+	color: @color-gray;
+    background-color: @color-lightgray;
+    border-color: @color-lightgray;
+}
+.el-button--custom:link, .el-button--custom:visited, .el-button--custom:hover, .el-button--custom:active{
+	color: @color-white;
+    background-color: @color-base;
+    border-color: @color-base;
+}
+.el-button--primary:hover, .el-button--primary:visited, .el-button--primary:active{
+    background-color: @color-ligthbase;
+    border-color: @color-ligthbase;
+}
+.el-button--primary, .el-button--primary:focus{
+	color: #fff;
+    background-color: @color-base;
+    border-color: @color-base;
+}
+
+.el-button--default:hover, .el-button--default:visited, .el-button--default:active{
+    background-color: #fff;
+    color: @color-ligthbase;
+    border-color: @color-ligthbase;
+}
+.el-button--default, .el-button--default:focus{
+	color: @color-base;
+    background-color: #fff;
+    border-color: @color-base;
+}
+.el-button--text{
+	color: @color-base;
+}
+.el-button--text:hover{
+	color: @color-base;
+}
+/*重写radio的选中样式*/
+.msf-reset-radio{
+	.el-radio.is-bordered.is-checked{ border-color: @color-base;}
+	.el-radio__input.is-checked+.el-radio__label{ color: @color-base;}
+	.el-radio{
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		.el-radio__input{
+			display: none;
+		}
+		.el-radio__label{
+			width: 100%;
+			display: block;
+			padding: 0;
+			text-align: center;
+		}
+	}
+	.el-radio.is-checked{
+		background: url(../../images/duigou.png) 0 0 no-repeat;
+		background-position: 52px 17px;
+    	background-size: 30%;
+		// background-size: 27%;
+	}
+}
+/*新定义tags的基础绿色tag*/
+.el-tag--basic{
+	background-color: rgba(100,192,171,.1);
+    border-color: rgba(100,192,171,.2);
+    color: @color-base;
+    .el-icon-close{
+    	color: @color-base;
+    }
+    .el-icon-close:hover{background: @color-base;}
+}

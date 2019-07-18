@@ -1,0 +1,65 @@
+@import "../common/var.less";
+.msf-header{
+	overflow: hidden;
+	border-bottom: 1px solid @color-base;
+	background: #fff;
+	.msf-header-con{
+		width: 1240px;
+		height: 100px;
+		margin: 0 auto;
+		.msf-logo{
+			padding: 0 28px 0 47px;
+			.msf-logoimg{
+				float: left;
+				width: 80px;
+				height: 99px;
+			}
+		}
+		.msf-cityswitch{
+			margin: 66px 77px 0 0;
+			font-size: @font18;
+			.msf-cityswitch-i{
+				font-size: @font14;
+				color: @color-ligth;
+			}
+		}
+		.msf-navigator{
+			.msf-navigator-item{
+				float: left;
+				height: 100px;
+				padding: 52px 22px 0;
+				font-size: @font20;
+				a{
+					color: @color-black;
+				}
+			}
+			.msf-navigator-item:hover{
+				background: @color-yellow;
+			}
+			.msf-login{
+				color: @color-ligth;
+				.msf-login-span{
+					color: @color-base;
+				}
+			}
+			.msf-login:hover{
+				background: none;
+			}
+		}
+		.msf-rightlinks{
+			padding: 28px 58px 0 0;
+			font-size: @font18;
+			text-align: right;
+			.msf-tocompany{
+				display: block;
+				color: @color-ligth;
+				margin-bottom: 2px;
+			}
+			.msf-tofreepublish{
+				display: block;
+				background: @color-coffee;
+				color: @color-white;
+			}
+		}
+	}
+}

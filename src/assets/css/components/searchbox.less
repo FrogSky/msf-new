@@ -1,0 +1,101 @@
+@import "../common/var.less";
+.msf-search-wrapper {
+    background: #F2F5F4;
+    padding: 30px 0 28px;
+    min-width: 1200px;
+    .search_box {
+        border: 0 solid @color-base;
+        width: 938px;
+        height: 46px;
+        margin: 0 auto;
+        position: relative;
+        .search_input {
+            width: 762px;
+            line-height: 20px;
+            height: 46px;
+            float: left;
+            font-size: 16px;
+            padding: 12px 16px;
+            margin: 0;
+            border: 1px solid #E8E8E8;
+            border-right: 0
+        }
+        .search_input:focus {
+            border: 1px solid @color-base;
+            border-right: 0;
+            outline: none;
+        }
+        .search_button {
+            float: left;
+            width: 142px;
+            height: 46px;
+            font-size: 18px;
+            color: #FFF;
+            border: 0;
+            background: @color-base;
+            cursor: pointer;
+            outline: none;
+        }
+        .search_button:hover {
+            background: #00a57f
+        }
+    }
+    .hotSearch {
+        width: 938px;
+        height: 22px;
+        overflow: hidden;
+        margin: 6px auto 0;
+        dt{
+            float: left;
+            margin-right: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+        dd{
+            float: left;
+            margin-right: 20px;
+            color: #999;
+            a {
+                color: inherit
+            }
+            a:hover {
+                text-decoration: underline
+            }
+            .highlight {
+                color: @color-base
+            }
+        }
+    }
+    .pos-guess-wrapper {
+        position: relative;
+        width: 938px;
+        height: 0;
+        margin: 0 auto;
+        .guess_wrapper {
+            position: absolute;
+            z-index: 150;
+            width: 762px;
+            background: #FFF;
+            -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .08);
+            -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .08);
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .08);
+            border-radius: 3px;
+            font-size: 14px;
+            span {
+                display: block;
+                color: #999;
+                padding: 5px 17px
+            }
+            li {
+                color: #555;
+                padding: 8px 17px;
+                cursor: pointer
+            }
+            li:hover {
+                background-color: @color-base;
+                color: #fff
+            }
+        }
+    }
+}
+
