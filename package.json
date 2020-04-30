@@ -10,7 +10,7 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "element-ui": "^2.4.3",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "vue": "^2.5.16",
